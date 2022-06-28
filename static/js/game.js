@@ -82,7 +82,8 @@ function createBlock() {
     
     this.draw = function() {
         ctx = gameCanvas.context;
-        ctx.fillStyle = "#2043f2";
+        ctx.scr('')
+        /*ctx.fillStyle = "#2043f2";*/
         ctx.fillRect(this.x, this.y, width, height);
         
     }
@@ -126,7 +127,7 @@ function createScoreLabel(x, y) {
     this.y = y;
     this.draw = function() {
         ctx = gameCanvas.context;
-        ctx.font = "25px Marker Felt";
+        ctx.font = "25px Consolas";
         ctx.fillStyle = "black";
         ctx.fillText(this.text, this.x, this.y);
     }

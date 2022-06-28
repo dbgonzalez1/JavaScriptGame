@@ -1,12 +1,35 @@
-canvas {
-    border: 8px groove rgb(51, 235, 226);
+/*Insertar y modificar propiedades de la imagen de fondo al juego*/
+canvas { 
+    border: 8px groove rgb(255, 255, 255);
     /*background-color: #87ceeb;*/
     background-image: url(../assets/fondo.jpg) !important;
     background-position: center;
     background-size: cover;
 }
 
+/*Posición del cuadro de juego*/
+body{
+    padding-top: 40px;
+}
+/*Modificar propiedades de la etiqueta h1*/
+h1{
+    color: rgb(10, 248, 117);
+    /*text-shadow: 5px 5px 10px rgb(248, 248, 248);*/
+    text-shadow: 5px 5px 3px rgb(30, 82, 253), 5px 5px 5px rgb(248, 248, 248);
+}
 
+/*Modificar porpiedades del botón y agregar efectsos visuales*/
+.btn{
+    background-color: #7af306;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: #2043f2; /* Green */
+    color: white;
+  }
+
+/*Propiedades del video insertado como background*/
 video {
     position: fixed;
     left: 0;
