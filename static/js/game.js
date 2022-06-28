@@ -37,8 +37,6 @@ var gameCanvas = {
     }
 }
 
-/*Imagen*/
-
 
 function createPlayer(width, height, x) {
     this.width = width;

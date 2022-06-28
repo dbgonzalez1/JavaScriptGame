@@ -5,23 +5,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Laboratorio de Aplicaciones Web" />
+
     <!--Implementación de Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
     <!--Se llama a la carpeta de CSS en Static-->
     <link rel="stylesheet" href="/static/css/game.css">
+
 </head>
+
 <!--Se inicicaliza el body con la función del juego-->
 <body onload="startGame()" align="center">
+
     <!--Se agrega la etiiqueta video el cual será el background de nuesta página-->
     <video src="../static/assets/base.mp4" autoplay="true" muted="true" loop="true" poster=""></video>
+
     <!--Etiqueta de texto h1 con estilo de Boostrap display-->
     <h1 class="display-1"><strong>Block Hopper</strong></h1>
     <br>
+
     <!--Se implementa un botón para recargar la página de manera más dinámica-->
     <a class="btn" href="javascript:location.reload()">RESTART</a>
+
 </body>
 
 </html>
+
 <!--Se llama a la carpeta de JS en Static-->
 <script src="/static/js/game.js"></script>

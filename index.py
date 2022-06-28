@@ -1,4 +1,4 @@
-#importamos la libreria Flask
+#Se importa las librerias Flask y render template
 from flask import Flask, render_template
 
 '''
