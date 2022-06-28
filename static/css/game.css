@@ -1,4 +1,17 @@
 canvas {
-    border:2px solid black;
-    background-color: #87ceeb;
+    border: 8px groove rgb(51, 235, 226);
+    /*background-color: #87ceeb;*/
+    background-image: url(../assets/fondo.jpg) !important;
+    background-position: center;
+    background-size: cover;
+}
+
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }

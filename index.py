@@ -1,7 +1,7 @@
 #importamos la libreria Flask
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 #---------------------------------------
 #Ruta de pagina principal

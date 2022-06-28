@@ -1,4 +1,5 @@
 
+/*Tamaño del game*/
 var canvasWidth = 600;
 var canvasHeight = 400;
 
@@ -36,6 +37,9 @@ var gameCanvas = {
     }
 }
 
+/*Imagen*/
+
+
 function createPlayer(width, height, x) {
     this.width = width;
     this.height = height;
@@ -44,7 +48,7 @@ function createPlayer(width, height, x) {
     
     this.draw = function() {
         ctx = gameCanvas.context;
-        ctx.fillStyle = "green";
+        ctx.fillStyle = ('#7af306')
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
     this.makeFall = function() {
@@ -78,8 +82,9 @@ function createBlock() {
     
     this.draw = function() {
         ctx = gameCanvas.context;
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "#2043f2";
         ctx.fillRect(this.x, this.y, width, height);
+        
     }
     this.attackPlayer = function() {
         this.x -= speed;
