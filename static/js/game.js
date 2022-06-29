@@ -18,7 +18,7 @@ var block;
 var score = 0;
 // Create a variable to hold our scoreLabel
 var scoreLabel;
-
+//Funcion para iniciar el juego
 function startGame() {
     gameCanvas.start();
     player = new createPlayer(30, 30, 10);
@@ -26,7 +26,7 @@ function startGame() {
     // Assign your scoreLabel variable a value from scoreLabel()
     scoreLabel = new createScoreLabel(10, 30);
 }
-
+//Crea la figura o cuadro donde contendra el juego
 var gameCanvas = {
     canvas: document.createElement("canvas"),
     start: function() {
@@ -37,7 +37,7 @@ var gameCanvas = {
     }
 }
 
-
+//Funcion para crear al personaje principal
 function createPlayer(width, height, x) {
     this.width = width;
     this.height = height;
@@ -70,6 +70,7 @@ function createPlayer(width, height, x) {
     }
 }
 
+//Funcion para determinar la velocidad del juego
 function createBlock() {
     var width = randomNumber(10, 50);
     var height = randomNumber(10, 200);
@@ -102,6 +103,7 @@ function createBlock() {
     }
 }
 
+//Funcion para determinar el momento en el que choca el objeto con los bloques
 function detectCollision() {
     var playerLeft = player.x
     var playerRight = player.x + player.width;
@@ -119,6 +121,7 @@ function detectCollision() {
     }
 }
 
+//Funcion para crear el score que se determina por las veces que pase por el objeto bloque
 function createScoreLabel(x, y) {
     this.score = 0;  
     this.x = x;
@@ -131,6 +134,7 @@ function createScoreLabel(x, y) {
     }
 }
 
+//Funcion para actualizar el score en caso de seguir o finalizar
 function updateCanvas() {
     detectCollision();
     
@@ -149,15 +153,18 @@ function updateCanvas() {
     scoreLabel.draw();
 }
 
+//Funcion para crear valores indefinidos
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
+//Funcion para determinar la posicion cero al objeto
 function resetJump() {
     jumpSpeed = 0;
     isJumping = false;
 }
 
+//Funcion para determinar el espacio de salto que tiene el objeto
 document.body.onkeyup = function(e) {
     if (e.keyCode == 32) {
         isJumping = true;
