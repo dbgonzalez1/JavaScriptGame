@@ -82,7 +82,7 @@ function createBlock() {
     this.draw = function() {
         ctx = gameCanvas.context;
         ctx.scr('')
-        /*ctx.fillStyle = "#2043f2";*/
+        ctx.fillStyle = "#2043f2";
         ctx.fillRect(this.x, this.y, width, height);
         
     }
